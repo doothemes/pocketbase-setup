@@ -30,7 +30,7 @@ Es **idempotente** — re-ejecutarlo actualiza el binario sin tocar la base de d
 ### Básica (puerto 8090)
 
 ```bash
-curl -fsSL https://ews.pe/pocketbase/setup.sh | sudo bash
+curl -fsSL https://raw.githubusercontent.com/doothemes/pocketbase-setup/main/setup.sh | sudo bash
 ```
 
 Al terminar imprime las credenciales del superuser inicial:
@@ -47,7 +47,7 @@ Al terminar imprime las credenciales del superuser inicial:
 ### Con dominio + HTTPS
 
 ```bash
-curl -fsSL https://ews.pe/pocketbase/setup.sh | \
+curl -fsSL https://raw.githubusercontent.com/doothemes/pocketbase-setup/main/setup.sh | \
     sudo DOMAIN=pb.midominio.com EMAIL=admin@midominio.com bash
 ```
 
@@ -56,7 +56,7 @@ curl -fsSL https://ews.pe/pocketbase/setup.sh | \
 ### Con credenciales de admin propias
 
 ```bash
-curl -fsSL https://ews.pe/pocketbase/setup.sh | \
+curl -fsSL https://raw.githubusercontent.com/doothemes/pocketbase-setup/main/setup.sh | \
     sudo PB_ADMIN_EMAIL=tu@email.com PB_ADMIN_PASSWORD=MiPassSegura bash
 ```
 
@@ -172,7 +172,7 @@ Te solicita escribir literalmente `borrar pocketbase` para confirmar.
 ### Pipeada (no interactiva)
 
 ```bash
-curl -fsSL https://ews.pe/pocketbase/setup.sh | sudo FORCE=1 bash -s -- uninstall
+curl -fsSL https://raw.githubusercontent.com/doothemes/pocketbase-setup/main/setup.sh | sudo FORCE=1 bash -s -- uninstall
 ```
 
 ### Lo que NO se elimina
